@@ -1,18 +1,1 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-body > div {
-  @extend .container;
-}
-
-form > div {
-  @extend .form-group;
-}
-
-form input {
-  @extend .form-control;
-}
-
-form > button {
-  @extend .btn;
-  @extend .btn-primary;
-}
+@import "_style-bootstrap";
