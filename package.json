@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass -o build src"
+    "build": "node-sass --include-path node_modules -o build src"
   },
   "author": "",
   "license": "ISC",
