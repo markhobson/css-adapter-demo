@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "npm run build && node-sass --include-path node_modules -o build -w src",
     "build": "node-sass --include-path node_modules -o build src"
   },
   "author": "",
