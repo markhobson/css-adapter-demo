@@ -8,57 +8,61 @@
 		<title>Style Demo</title>
 	</head>
 	<body>
-		<nav>
-			<a href="#">Pet World</a>
-			<button type="button" data-toggle="collapse" data-target="#nav">
-				<span></span>
-			</button>
-			<div id="nav">
-				<ul>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">Shop</a>
-					</li>
-					<li>
-						<a href="#">Basket</a>
-					</li>
-				</ul>
+		<header>
+			<nav>
+				<a href="#">Pet World</a>
+				<button type="button" data-toggle="collapse" data-target="#nav">
+					<span></span>
+				</button>
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Shop</a>
+						</li>
+						<li>
+							<a href="#">Basket</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<h1>Choose a pet</h1>
+				<form class="add-pet">
+					<div class="name">
+						<label for="name">Name</label>
+						<input type="text" id="name"/>
+					</div>
+					<div class="animal">
+						<label for="animal">Animal</label>
+						<select id="animal">
+							<option value="cat">Cat</option>
+							<option value="dog">Dog</option>
+							<option value="hamster">Hamster</option>
+						</select>
+					</div>
+					<div class="gender">
+						<div class="male">
+							<input type="radio" id="male" name="gender" checked/>
+							<label for="male">Male</label>
+						</div>
+						<div class="female">
+							<input type="radio" id="female" name="gender"/>
+							<label for="female">Female</label>
+						</div>
+					</div>
+					<div class="cute">
+						<input type="checkbox" id="cute"/>
+						<label for="cute">Cute</label>
+					</div>
+					<button type="submit" class="add">Add to basket</button>
+					<button class="cancel">Cancel</button>
+				</form>
 			</div>
-		</nav>
-		<div>
-			<h1>Choose a pet</h1>
-			<form class="add-pet">
-				<div class="name">
-					<label for="name">Name</label>
-					<input type="text" id="name"/>
-				</div>
-				<div class="animal">
-					<label for="animal">Animal</label>
-					<select id="animal">
-						<option value="cat">Cat</option>
-						<option value="dog">Dog</option>
-						<option value="hamster">Hamster</option>
-					</select>
-				</div>
-				<div class="gender">
-					<div class="male">
-						<input type="radio" id="male" name="gender" checked/>
-						<label for="male">Male</label>
-					</div>
-					<div class="female">
-						<input type="radio" id="female" name="gender"/>
-						<label for="female">Female</label>
-					</div>
-				</div>
-				<div class="cute">
-					<input type="checkbox" id="cute"/>
-					<label for="cute">Cute</label>
-				</div>
-				<button type="submit" class="add">Add to basket</button>
-				<button class="cancel">Cancel</button>
-			</form>
-		</div>
+		</main>
 	</body>
 </html>
