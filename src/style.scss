@@ -1,5 +1,41 @@
 @import "bootstrap/scss/bootstrap";
 
+nav {
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  @extend .bg-dark;
+
+  > a {
+    @extend .navbar-brand;
+  }
+
+  > button {
+    @extend .navbar-toggler;
+
+    > span {
+      @extend .navbar-toggler-icon;
+    }
+  }
+
+  > div {
+    @extend .collapse;
+    @extend .navbar-collapse;
+
+    > ul {
+      @extend .navbar-nav;
+
+      > li {
+        @extend .nav-item;
+
+        > a {
+          @extend .nav-link;
+        }
+      }
+    }
+  }
+}
+
 body > div {
   @extend .container;
 }
