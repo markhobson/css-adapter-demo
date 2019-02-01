@@ -54,4 +54,8 @@ body > div {
     @extend .btn;
     @extend .btn-primary;
   }
+
+  .cancel {
+    @extend .btn;
+  }
 }
