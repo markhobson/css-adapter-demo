@@ -1,2 +1,28 @@
-@import "_style-bootstrap";
-//@import "_style-material";
+@import "bootstrap/scss/bootstrap";
+
+body > div {
+  @extend .container;
+}
+
+.add-pet {
+  .name {
+    @extend .form-group;
+
+    > input {
+      @extend .form-control;
+    }
+  }
+
+  .animal {
+    @extend .form-group;
+
+    > select {
+      @extend .form-control;
+    }
+  }
+
+  .add {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}
