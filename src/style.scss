@@ -38,6 +38,10 @@ nav {
 
 main > div {
   @extend .container;
+
+  > h1 {
+    @extend .mt-5;
+  }
 }
 
 .add-pet {
