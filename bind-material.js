@@ -1,3 +1,3 @@
-[].map.call(document.querySelectorAll('form > div'), function(el) {
+[].map.call(document.querySelectorAll('.add-pet .name, .add-pet .pet'), function(el) {
 	return new mdc.textField.MDCTextField(el);
 });

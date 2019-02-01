@@ -1,8 +1,8 @@
 @import "@material/button/mdc-button";
 @import "@material/textfield/mdc-text-field";
 
-form {
-  > div {
+.add-pet {
+  .name, .pet {
     @extend .mdc-text-field;
 
     > label {
@@ -18,7 +18,7 @@ form {
     }
   }
 
-  > button {
+  .add {
     @extend .mdc-button;
 
     > span {

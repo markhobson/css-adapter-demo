@@ -4,8 +4,8 @@ body > div {
   @extend .container;
 }
 
-form {
-  > div {
+.add-pet {
+  .name, .pet {
     @extend .form-group;
 
     > input {
@@ -13,7 +13,7 @@ form {
     }
   }
 
-  > button {
+  .add {
     @extend .btn;
     @extend .btn-primary;
   }
