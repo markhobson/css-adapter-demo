@@ -21,6 +21,22 @@ body > div {
     }
   }
 
+  .gender {
+    @extend .form-group;
+
+    .male, .female {
+      @extend .form-check;
+
+      > input {
+        @extend .form-check-input;
+      }
+
+      > label {
+        @extend .form-check-label;
+      }
+    }
+  }
+
   .add {
     @extend .btn;
     @extend .btn-primary;
