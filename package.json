@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npm run build && node-sass --include-path node_modules -o build -w src",
-    "build": "node-sass --include-path node_modules -o build src"
+    "watch": "nodemon -w src -e scss -x 'npm run build'",
+    "sass": "node-sass --include-path node_modules -o build src",
+    "autoprefixer": "postcss -u autoprefixer -r build",
+    "build": "npm run sass && npm run autoprefixer"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.4.7",
     "bootstrap": "^4.2.1",
     "material-components-web": "^0.43.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "postcss-cli": "^6.1.1"
   }
 }

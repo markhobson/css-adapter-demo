@@ -1,4 +1,5 @@
 @import "@material/button/mdc-button";
+@import "@material/select/mdc-select";
 @import "@material/textfield/mdc-text-field";
 @import "@material/typography/mdc-typography";
 
@@ -7,7 +8,7 @@ h1 {
 }
 
 .add-pet {
-  .name, .pet {
+  .name {
     @extend .mdc-text-field;
 
     > label {
@@ -16,6 +17,26 @@ h1 {
 
     > input {
       @extend .mdc-text-field__input;
+    }
+
+    > div {
+      @extend .mdc-line-ripple;
+    }
+  }
+
+  .animal {
+    @extend .mdc-select;
+
+    > i {
+      @extend .mdc-select__dropdown-icon;
+    }
+
+    > label {
+      @extend .mdc-floating-label;
+    }
+
+    > select {
+      @extend .mdc-select__native-control;
     }
 
     > div {

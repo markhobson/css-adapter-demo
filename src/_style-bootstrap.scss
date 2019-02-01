@@ -5,10 +5,18 @@ body > div {
 }
 
 .add-pet {
-  .name, .pet {
+  .name {
     @extend .form-group;
 
     > input {
+      @extend .form-control;
+    }
+  }
+
+  .animal {
+    @extend .form-group;
+
+    > select {
       @extend .form-control;
     }
   }
