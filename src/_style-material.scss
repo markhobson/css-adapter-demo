@@ -1,0 +1,26 @@
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+
+form > div {
+  @extend .mdc-text-field;
+
+  label {
+    @extend .mdc-floating-label;
+  }
+
+  input {
+    @extend .mdc-text-field__input;
+  }
+
+  div {
+    @extend .mdc-line-ripple;
+  }
+}
+
+form > button {
+  @extend .mdc-button;
+
+  span {
+    @extend .mdc-button__label;
+  }
+}
