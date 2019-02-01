@@ -37,6 +37,19 @@ body > div {
     }
   }
 
+  .cute {
+    @extend .form-group;
+    @extend .form-check;
+
+    > input {
+      @extend .form-check-input;
+    }
+
+    > label {
+      @extend .form-check-label;
+    }
+  }
+
   .add {
     @extend .btn;
     @extend .btn-primary;
