@@ -7,13 +7,15 @@
     "watch": "nodemon -w src -e scss -x 'npm run build'",
     "sass": "node-sass --include-path node_modules -o build src",
     "autoprefixer": "postcss -u autoprefixer -r build",
-    "build": "npm run sass && npm run autoprefixer"
+    "build": "npm run sass && npm run autoprefixer",
+    "start": "live-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "bootstrap": "^4.2.1",
+    "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "postcss-cli": "^6.1.1"
