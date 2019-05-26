@@ -7,7 +7,7 @@ Projects that use CSS frameworks such as [Bootstrap](https://getbootstrap.com/) 
 Build the CSS:
 
 ```
-npm build
+npm run build
 ```
 
 Launch the demo:
